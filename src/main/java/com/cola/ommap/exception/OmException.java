@@ -1,7 +1,8 @@
-package com.cola.omlink.common.exception;
+package com.cola.ommap.exception;
 
 
-import com.cola.omlink.repository.vo.common.ResultCodeEnum;
+
+import com.cola.ommap.repository.vo.common.ResultCodeEnum;
 import lombok.Data;
 
 @Data

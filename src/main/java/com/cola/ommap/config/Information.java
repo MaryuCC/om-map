@@ -1,15 +1,11 @@
-package com.atguigu.spzx.manager.constant;
+package com.cola.ommap.config;
 
 public interface Information {
     String getText();
-
-
 
     default int getCode(){
         return -1;
     }
 
-    default public String getEnText() {return  "";}
 
-    default public String getRatioLabel() {return  "";}
 }

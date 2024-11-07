@@ -1,4 +1,4 @@
-package com.cola.ommap.mapper;
+package com.cola.ommap.mapper.article;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.cola.ommap.repository.entity.article.Article;

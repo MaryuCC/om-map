@@ -1,7 +1,8 @@
-package com.cola.omlink.repository.dto.order;
+package com.cola.ommap.repository.dto.order;
 
 
-import com.cola.omlink.repository.entity.product.Project;
+
+import com.cola.ommap.repository.entity.project.Project;
 import lombok.Data;
 
 @Data

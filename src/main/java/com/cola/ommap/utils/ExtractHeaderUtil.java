@@ -1,6 +1,7 @@
-package com.cola.omlink.utils;
+package com.cola.ommap.utils;
 
 import jakarta.servlet.http.HttpServletRequest;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 

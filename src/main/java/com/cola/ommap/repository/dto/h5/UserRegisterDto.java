@@ -1,11 +1,11 @@
-package com.cola.omlink.repository.dto.h5;
+package com.cola.ommap.repository.dto.h5;
 
 import lombok.Data;
 
 @Data
 public class UserRegisterDto {
 
-    private String userName;
+    private String email;
 
     private String password;
 

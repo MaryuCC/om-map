@@ -1,7 +1,7 @@
-package com.cola.omlink.common.exception;
+package com.cola.ommap.exception;
 
-import com.cola.omlink.repository.vo.common.Result;
-import com.cola.omlink.repository.vo.common.ResultCodeEnum;
+import com.cola.ommap.repository.vo.common.Result;
+import com.cola.ommap.repository.vo.common.ResultCodeEnum;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;

@@ -1,4 +1,4 @@
-package com.cola.ommap.repository.vo.base;
+package com.cola.ommap.repository.vo.common;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;

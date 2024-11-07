@@ -1,4 +1,4 @@
-package com.cola.ommap.repository.vo.base;
+package com.cola.ommap.repository.vo.common;
 
 import lombok.Getter;
 

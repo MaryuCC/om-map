@@ -1,6 +1,7 @@
-package com.cola.omlink.repository.vo.h5;
+package com.cola.ommap.repository.vo.h5;
 
-import com.cola.omlink.repository.vo.common.RolesEnum;
+
+import com.cola.ommap.repository.vo.common.RolesEnum;
 import lombok.Data;
 
 @Data

@@ -1,4 +1,4 @@
-package com.cola.omlink.manager.constant;
+package com.cola.ommap.constant;
 
 public class RedisConstant {
 

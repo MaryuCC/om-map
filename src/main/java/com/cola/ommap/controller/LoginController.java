@@ -3,8 +3,8 @@ package com.cola.ommap.controller;
 
 import com.cola.ommap.repository.dto.h5.UserLoginDto;
 import com.cola.ommap.repository.dto.h5.UserRegisterDto;
-import com.cola.ommap.repository.vo.base.Result;
-import com.cola.ommap.repository.vo.base.ResultCodeEnum;
+import com.cola.ommap.repository.vo.common.Result;
+import com.cola.ommap.repository.vo.common.ResultCodeEnum;
 import com.cola.ommap.service.EmailService;
 import com.cola.ommap.service.UserInfoService;
 import com.cola.ommap.utils.AuthContextUtil;
@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.*;
 
 @Slf4j
 @RestController
-@RequestMapping("/api/user")
-public class UserController {
+@RequestMapping("/api/account")
+public class LoginController {
 
     @Autowired
     EmailService emailService;
@@ -63,5 +63,7 @@ public class UserController {
         userInfoService.logout(token);
         return Result.build(null, ResultCodeEnum.SUCCESS);
     }
+
+
 
 }

@@ -1,7 +1,8 @@
-package com.cola.ommap.repository.entity.base;
+package com.cola.ommap.repository.entity.System;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.TableField;
+import com.cola.ommap.repository.entity.base.BaseEntity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 

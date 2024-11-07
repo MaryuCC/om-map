@@ -1,4 +1,9 @@
-package com.cola.ommap.mapper;
+package com.cola.ommap.mapper.user;
 
-public interface UserInfoMapper {
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.cola.ommap.repository.entity.user.UserInfo;
+import org.apache.ibatis.annotations.Mapper;
+
+@Mapper
+public interface UserInfoMapper extends BaseMapper<UserInfo> {
 }

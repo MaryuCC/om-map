@@ -1,7 +1,7 @@
-package com.example.teachplatform.utils;
+package com.cola.ommap.utils;
 
 
-import com.example.teachplatform.repository.entity.User;
+import com.cola.ommap.repository.entity.user.User;
 
 public class AuthContextUtil {
     private static final ThreadLocal<User> userInfoThreadLocal = new ThreadLocal<>() ;
