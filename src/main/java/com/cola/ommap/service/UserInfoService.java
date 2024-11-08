@@ -4,8 +4,10 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import com.cola.ommap.repository.dto.h5.UserLoginDto;
 import com.cola.ommap.repository.dto.h5.UserRegisterDto;
 import com.cola.ommap.repository.entity.user.UserInfo;
+import com.cola.ommap.repository.vo.common.RolesEnum;
 import com.cola.ommap.repository.vo.h5.UserVo;
 
+import java.nio.file.FileStore;
 import java.sql.Date;
 
 public interface UserInfoService extends IService<UserInfo> {
@@ -28,4 +30,6 @@ public interface UserInfoService extends IService<UserInfo> {
     void updateBirthday(Date birthday);
 
     void updatePasswd(String passwd);
+
+    RolesEnum getUserRoleByUserId(Long id);
 }

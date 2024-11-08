@@ -29,3 +29,12 @@ spring:
             enable: true
     debug: true
     protocol: smtp
+
+om-map:
+  auth:
+    noAuthUrls:
+      - /admin/system/index/login
+      - /admin/system/index/generateValidateCode
+      - /doc.html/**
+      - /webjars/**
+      - /v3/**

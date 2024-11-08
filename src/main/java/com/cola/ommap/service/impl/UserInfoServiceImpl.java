@@ -11,6 +11,7 @@ import com.cola.ommap.repository.dto.h5.UserRegisterDto;
 import com.cola.ommap.repository.entity.user.User;
 import com.cola.ommap.repository.entity.user.UserInfo;
 import com.cola.ommap.repository.vo.common.ResultCodeEnum;
+import com.cola.ommap.repository.vo.common.RolesEnum;
 import com.cola.ommap.repository.vo.h5.UserVo;
 import com.cola.ommap.service.UserInfoService;
 import com.cola.ommap.utils.AuthContextUtil;
@@ -189,5 +190,16 @@ public class UserInfoServiceImpl extends ServiceImpl<UserInfoMapper, UserInfo> i
         User user = AuthContextUtil.getUserInfo();
         user.setPassword(passwd);
         userMapper.updateById(user);
+    }
+
+    @Override
+    public RolesEnum getUserRoleByUserId(Long id) {
+        UserInfo userInfo = userInfoMapper.selectOne(new LambdaQueryWrapper<UserInfo>()
+                                                        .eq(UserInfo::getUserId,id));
+        if(userInfo != null && userInfo.getUserRole() != null) {
+            return RolesEnum.fromValue(userInfo.getUserRole());
+        }else {
+            return RolesEnum.USER;
+        }
     }
 }
